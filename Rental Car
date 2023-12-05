@@ -1,0 +1,15 @@
+int rental_car_cost(int d){
+  
+  #include <iostream>
+  
+  int total = 40 * d;
+if ((3 <= d) && (7 > d)){
+  total = total - 20;
+}
+else if(d>=7){
+  total = total - 50;
+}
+
+  return total;
+    
+}
