@@ -1,0 +1,19 @@
+#include <string>
+#include<iostream>
+#include<vector>
+#include<numeric>
+
+std::string odd_or_even(const std::vector<int> &arr)
+{
+  
+  int x = accumulate(arr.begin(),arr.end(),0);
+  if ((x%2)== 0){
+    return "even";
+  }
+  
+  else{
+    return"odd";
+  }
+  
+    
+}
