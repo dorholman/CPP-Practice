@@ -1,0 +1,56 @@
+#include <string>
+#include <iostream>
+#include <stdio.h>
+#include <string.h>
+#include <vector>
+
+
+std::string DNAStrand(const std::string& dna)
+{
+    int size = dna.size();
+    std::cout << dna.substr(0, size);
+  
+char a = 'A';
+char t = 'T';
+char g = 'G';
+char c = 'C';
+  
+  
+  
+for (int i = 0; i<=size; i++){
+  char digit = dna.at(i);
+  std::vector<char> x;
+  
+  //if a, become t
+  if (a == digit) {
+  x.push_back(t);
+    }
+  
+  //if t, become a
+  if (t == digit) {
+  x.push_back(a);
+    }
+  
+  //if g, become c
+  if (g == digit) {
+  x.push_back(c);
+  }
+  
+  //if c, become g
+  if (c == digit) {
+  x.push_back(g);
+    
+}
+  
+  
+  
+    //return array for loop (i = number in array)
+
+
+}
+  
+  
+}
+
+    
+    
