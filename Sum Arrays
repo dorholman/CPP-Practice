@@ -1,0 +1,11 @@
+#include <vector>
+
+int sum(std::vector<int> nums) {
+  int size = nums.size();
+  int x = 0;
+  
+  for (size > 0; size--;){
+    x = (x+nums.at(size));
+  }
+  return x;
+}
