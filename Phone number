@@ -2,13 +2,26 @@
 
 std::string createPhoneNumber(const int arr [10]){
   //create var with first three digits
-  int size = arr.size();
   std::string x;
+  std::string y;
+  std::string z;
   
   for (int i = 0; i < 3; i++){
-    x.push_back()
+std::string str = std::to_string(arr[i]);
+    x = x + str;
+    //std::cout<<str<<"\n";
   }
   //create var with second three
+  for (int i = 3; i < 6; i++){
+   std::string str = std::to_string(arr[i]);
+    y = y + str;
+  }
   //create var with last four
+  for(int i = 6; i < 10; i++){
+    std::string str = std::to_string(arr[i]);
+    z = z + str;
+  }
   //return all var's with () and -
+
+  return "("+ x + ") " + y + "-" + z;
 }
