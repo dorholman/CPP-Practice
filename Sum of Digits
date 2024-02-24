@@ -1,0 +1,19 @@
+int digital_root(int n)
+{
+  int x = 0;
+while (x>9 || x==0){
+ 
+    
+    
+  while (n > 0)
+{
+    int digit = n%10;
+    n /= 10;
+    x = x + digit;
+
+}
+  
+}
+  
+  return x;
+}
